@@ -28,7 +28,7 @@ async def send_fact():
             for fact in facts:
                 fact = fact.strip()
                 await channel.send(">>> " + fact)
-                await asyncio.sleep(86400)  # Tu możesz 
+                await asyncio.sleep(86400)  # Tu możesz zmienić odstęp czasowy pomiędzy wiadomościami (sekundy)
 
         except FileNotFoundError:
             print("Oh, no i dont see 'rank' file!")
